@@ -25,6 +25,62 @@ body {
   font-family: Arial, Helvetica, sans-serif;
 }
 
+.projects {
+  margin-bottom: 4rem;
+}
+
+.projects h2 {
+  text-align: center;
+  margin-bottom: 2rem;
+  font-size: 1.8rem;
+  color: #a33972;
+}
+
+.projectGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 1.5rem;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.projectCard {
+  background: #fff0f6;
+  border-radius: 10px;
+  padding: 1.5rem;
+  box-shadow: 0 2px 10px rgba(163, 87, 138, 0.1);
+  transition: box-shadow 0.3s ease, transform 0.3s ease;
+  cursor: default;
+}
+
+.projectCard:hover {
+  box-shadow: 0 8px 20px rgba(163, 87, 138, 0.3);
+  transform: translateY(-5px);
+}
+
+.projectCard h3 {
+  margin-top: 0;
+  margin-bottom: 0.5rem;
+  color: #a33972;
+}
+
+.projectCard p {
+  margin-bottom: 1rem;
+  color: #5e2e4f;
+  font-size: 0.95rem;
+}
+
+.projectLink {
+  color: #d36ca6;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.projectLink:hover,
+.projectLink:focus {
+  text-decoration: underline;
+}
+
 /* Navbar */
 
 .navbar {
