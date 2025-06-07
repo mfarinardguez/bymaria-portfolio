@@ -103,3 +103,16 @@
   --sidebar-border: oklch(0.922 0 0);
   --sidebar-ring: oklch(0.708 0 0);
 }
+
+.intro {
+  text-align: center;
+  margin-bottom: 4rem;
+  font-size: 1.2rem;
+}
+
+.highlight {
+  color: #d36ca6;
+  font-weight: 700;
+  font-style: italic;
+}
+
