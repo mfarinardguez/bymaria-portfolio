@@ -16,9 +16,18 @@ export const metadata: Metadata = {
 
 export default function RootLayout({
   children,
-}: Readonly<{
+  params
+}: {
   children: React.ReactNode;
-}>) {
+  params: { locale: string };
+}) {
+  let messages;
+  try {
+    messages = (await import(`../locales/${params.locale}/common.json`)).default;
+  } catch (error) {
+    notFound();
+  }
+
   return (
     <html lang="en">
       <body>
@@ -27,3 +36,4 @@ export default function RootLayout({
     </html>
   );
 }
+
