@@ -1,7 +1,6 @@
 'use client';
 
 import { useEffect, useState } from "react";
-import styles from "./SakuraRain.module.css";
 
 interface SakuraProps {
   id: number;
@@ -25,11 +24,11 @@ export default function SakuraRain() {
   }, []);
 
   return (
-    <div className={styles.sakuraContainer}>
+    <div className="sakuraContainer">
       {sakuras.map(({ id, left, delay, duration }) => (
         <div
           key={id}
-          className={styles.sakura}
+          className="sakura"
           style={{
             left: `${left}%`,
             animationDelay: `${delay}s`,
