@@ -1,6 +1,6 @@
 "use client";
 
-import { Card, CardContent } from "@/components/ui/card";
+import { Card } from "@/components/ui/card";
 import { FaGithub } from "react-icons/fa";
 
 type Proyecto = {
@@ -36,7 +36,7 @@ export default function ProyectosPage() {
 
       <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3 max-w-6xl mx-auto">
         {proyectos.map((proyecto, index) => (
-          <div
+          <Card
             key={index}
             className="bg-white rounded-2xl shadow-lg p-6 flex flex-col justify-between hover:scale-105 transition-transform duration-300"
           >
@@ -57,7 +57,7 @@ export default function ProyectosPage() {
                 Ver en GitHub
               </a>
             </div>
-          </div>
+          </Card>
         ))}
       </div>
     </div>
