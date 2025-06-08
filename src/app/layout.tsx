@@ -1,5 +1,4 @@
 import { NextIntlClientProvider } from 'next-intl';
-import { notFound } from 'next/navigation';
 import SakuraRain from '@/app/components/SakuraRain';
 import NavBar from '@/app/components/NavBar';
 import './globals.css';
@@ -19,7 +18,13 @@ export default async function LocaleLayout({
   try {
     messages = (await import(`../locales/${params.locale}/common.json`)).default;
   } catch (error) {
-    notFound();
+    return (
+      <html>
+        <body>
+          <h1>404 - Locale Not Found</h1>
+        </body>
+      </html>
+    );
   }
 
   return (
