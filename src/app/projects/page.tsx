@@ -4,12 +4,12 @@ import { Card } from "@/components/ui/card";
 import { FaGithub } from "react-icons/fa";
 
 type Proyecto = {
-  nombre: string;
-  descripcion: string;
-  githubUrl: string;
+  name: string;
+  description: string;
+  url: string;
 };
 
-const proyectos = [
+const proyectos: Proyecto[] = [
   {
     name: "E-commerce con Angular + Backend personalizado",
     description: "Sitio web que permite comprar y vender productos de kpop a través de internet.",
