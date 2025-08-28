@@ -11,19 +11,19 @@ type Proyecto = {
 
 const proyectos: Proyecto[] = [
   {
-    name: "E-commerce con Angular + Backend personalizado",
+    name: "Kpop E-commerce (Angular + Java Spring Boot + MongoDB)",
     description: "Sitio web que permite comprar y vender productos de kpop a través de internet.",
     url: "https://github.com/lariarguez/ecommerce.git",
+  },
+  {
+    name: "Raon Skin Clinic (Angular + Node.js + GraphQL + Firebase)",
+    description: "Sitio web para consultar productos del cuidado de la piel.",
+    url: "https://github.com/lariarguez/raon-skin-clinic.git",
   },
   { 
     name: "Trabajo Fin de Grado (Vue.js + Java Spring Boot + MongoDB)",
     description: "Herramienta web para planificar tus vacaciones día a día.",
     url: "https://github.com/lariarguez/touristic-route-designer.git",
-  },
-  {
-    name: "Pokedex (HTML + CSS + Javacript)",
-    description: "Pokemon",
-    url: "https://github.com/lariarguez/pokedex.git"
   }
 ];
 
