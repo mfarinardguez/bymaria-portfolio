@@ -13,17 +13,17 @@ const proyectos: Proyecto[] = [
   {
     name: "Kpop E-commerce (Angular + Java Spring Boot + MongoDB)",
     description: "Sitio web que permite comprar y vender productos de kpop a través de internet.",
-    url: "https://github.com/lariarguez/ecommerce.git",
+    url: "https://github.com/mfarinardguez/ecommerce.git",
   },
   {
     name: "Raon Skin Clinic (Angular + Node.js + GraphQL + Firebase)",
     description: "Sitio web para consultar productos del cuidado de la piel.",
-    url: "https://github.com/lariarguez/raon-skin-clinic.git",
+    url: "https://github.com/mfarinardguez/raon-skin-clinic.git",
   },
   { 
     name: "Trabajo Fin de Grado (Vue.js + Java Spring Boot + MongoDB)",
     description: "Herramienta web para planificar tus vacaciones día a día.",
-    url: "https://github.com/lariarguez/touristic-route-designer.git",
+    url: "https://github.com/mfarinardguez/touristic-route-designer.git",
   }
 ];
 
