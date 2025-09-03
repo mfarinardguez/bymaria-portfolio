@@ -20,6 +20,11 @@ const proyectos: Proyecto[] = [
     description: "Sitio web para consultar productos del cuidado de la piel.",
     url: "https://github.com/mfarinardguez/raon-skin-clinic.git",
   },
+  {
+    name: "Virtual Hospital (MVC + PHP + MySQL)",
+    description: "Sitio web para médicos y pacientes dedicado a solicitar, cambiar o cancelar citas médicas.",
+    url: "https://github.com/mfarinardguez/virtual-hospital.git",
+  },
   { 
     name: "Trabajo Fin de Grado (Vue.js + Java Spring Boot + MongoDB)",
     description: "Herramienta web para planificar tus vacaciones día a día.",
