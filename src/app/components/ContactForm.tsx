@@ -59,7 +59,7 @@ export default function ContactForm() {
 
   return (
     <Card className="p-6 bg-white shadow-md rounded-xl w-full max-w-xl">
-      <h2 className="text-xl font-semibold mb-4">Envíame un mensaje 🌸</h2>
+      <h2 className="text-xl font-semibold mb-4">Envíame un mensaje</h2>
 
       <Form {...form}>
         <form onSubmit={form.handleSubmit(onSubmit)} className="space-y-4">
@@ -70,7 +70,7 @@ export default function ContactForm() {
               <FormItem>
                 <FormLabel>Nombre</FormLabel>
                 <FormControl>
-                  <Input placeholder="Tu nombre" {...field} />
+                  <Input placeholder="Tu nombre" {...field}/>
                 </FormControl>
                 <FormMessage />
               </FormItem>
@@ -80,6 +80,7 @@ export default function ContactForm() {
           <FormField
             control={form.control}
             name="email"
+            
             render={({ field }) => (
               <FormItem>
                 <FormLabel>Correo</FormLabel>
@@ -107,7 +108,7 @@ export default function ContactForm() {
 
           <Button
             type="submit"
-            className="bg-pink-500 hover:bg-pink-600 text-white"
+            className="bg-blue-500 hover:bg-blue-600 text-white"
             disabled={sending}
           >
             {sending ? "Enviando..." : "Enviar"}

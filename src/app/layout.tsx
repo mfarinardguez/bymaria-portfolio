@@ -1,4 +1,3 @@
-import SakuraRain from '@/app/components/SakuraRain';
 import NavBar from '@/app/components/NavBar';
 import './globals.css';
 
@@ -15,10 +14,8 @@ export default function LocaleLayout({
   return (
     <html lang="en">
       <body>
-          <SakuraRain />
-          <NavBar />
-          <main className="pt-16">{children}</main>
-       
+        <NavBar />
+        <main className="bg-[url('/images/background.png')] pt-16">{children}</main>
       </body>
     </html>
   );
